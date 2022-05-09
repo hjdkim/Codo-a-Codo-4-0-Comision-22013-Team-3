@@ -7,7 +7,7 @@ import { doc, setDoc } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
 import { useLocation } from 'react-router-dom'
 
-const Login = (props) => {
+const Logins = (props) => {
 
   const location = useLocation();
   
@@ -193,4 +193,4 @@ const Login = (props) => {
   )
 }
 
-export default Login
+export default Logins

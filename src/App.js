@@ -1,8 +1,25 @@
+import Navbar from "./components/Navbar";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Logins from "./components/Logins";
+import Inicio from "./components/Inicio";
+import React from 'react'
+
 function App() {
   return (
-    <div className="container">
+    <div className="container-fluid">
 
-      <h1>Este es el proyecto</h1>
+      <BrowserRouter>
+        <Navbar></Navbar>
+
+        <Routes>
+
+          <Route index element={<Inicio/>}/>
+          <Route path="/login" element={<Logins/>}/>
+
+        </Routes>
+
+
+      </BrowserRouter>
       
     </div>
   );

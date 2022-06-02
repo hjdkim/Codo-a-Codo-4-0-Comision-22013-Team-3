@@ -151,11 +151,11 @@ const Logins = (props) => {
 
 
   return (
-    <div className='container'><h1>Login</h1>
+    <div className='container'>
 
       <div className="mt-5">
 
-        <h3 className='text-center'>{ registro ? 'Registrarse':'Logueo'}</h3>
+        <p className='text-center'>Debes { registro ? 'registrarte':'loguearte'} para acceder a tus pedidos y/o repartos</p>
 
         <hr></hr>
 
@@ -180,8 +180,21 @@ const Logins = (props) => {
                 onChange={e => setPassword(e.target.value)}
                 value={password}></input>
 
-                <button className="btn btn-dark btn-lg btn-block m-2" type='submit'>{registro ? 'Registrarse' : 'Loguearse'}</button>
-                <button onClick={() => setRegistro(!registro)} className="btn btn-info btn-lg btn-block m-2" type='button'>{registro ? 'Ya estoy registrado' : 'Deseo Registrarme' }</button>
+                <div className="row">
+
+                  <div className="row"><a href="" className="link">¿Olvidaste tu contraseña?</a></div>
+
+                  <div className="row">
+
+                    <div className="row"><button className="btn btn-dark btn-lg btn-block m-2" type='submit'>{registro ? 'Registrarse' : 'Loguearse'}</button></div>
+                    <div className="row"><button onClick={() => setRegistro(!registro)} className="btn btn-success btn-sm btn-block m-2" type='button'>{registro ? 'Ya estoy registrado' : 'Deseo Registrarme' }</button></div>
+
+                  </div>
+
+                </div>
+                
+
+                
               </form>
 
             </div>

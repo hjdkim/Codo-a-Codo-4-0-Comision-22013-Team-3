@@ -16,7 +16,6 @@ function App() {
           <Route path="/login" element={<Logins />} />
         </Routes>
       </BrowserRouter>
-      <PoolRepartidor />
     </div>
   );
 }

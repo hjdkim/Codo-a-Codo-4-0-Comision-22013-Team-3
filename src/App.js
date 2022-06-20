@@ -4,6 +4,7 @@ import Logins from "./components/Logins";
 import Inicio from "./components/Inicio";
 import React from "react";
 import PoolRepartidor from "./components/PoolRepartidor";
+import Admin from "./components/Admin";
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
         <Routes>
           <Route index element={<Inicio />} />
           <Route path="/login" element={<Logins />} />
+          <Route path="/admin" element={<Admin/>}/>
+          
         </Routes>
       </BrowserRouter>
     </div>

@@ -20,3 +20,4 @@ EN CURSO / REALIZADOS:
 | Logins | Jotsuha Castro | Completed |
 | Usuario | Ho Joong Kim | Completed |
 | logo (png) | Pedro Marsetti | Completed |
+| Dark Mode | Ho Joong Kim | Todo |

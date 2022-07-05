@@ -5,17 +5,18 @@ import Inicio from "./components/Inicio";
 import React from "react";
 import PoolRepartidor from "./components/PoolRepartidor";
 import Admin from "./components/Admin";
+import Choose from "./components/Choose";
 
 function App() {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid h-100">
       <BrowserRouter>
         <Navbar></Navbar>
 
         <Routes>
           <Route index element={<Inicio />} />
           <Route path="/login" element={<Logins />} />
-          <Route path="/admin" element={<Admin/>}/>
+          <Route path="/crear" element={<Choose/>}/>
           
         </Routes>
       </BrowserRouter>

@@ -3,8 +3,33 @@ import { useEffect, useRef } from 'react'
 import Km from './Km'
 import Logins from './Logins'
 import gsap from 'gsap'
+import { useState } from 'react'
+import { firebase } from '../firebase'
+import { onAuthStateChanged } from 'firebase/auth'
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import NavBarPanel from './NavBarPanel'
 
-const Inicio = () => {
+const Inicio = ({setUsuariog}) => {
+
+    const [usuario, setUsuario] = useState(false)
+
+    useEffect(()=>{
+
+        const auth = getAuth(firebase);
+
+        onAuthStateChanged(auth, (user) => {
+
+            if(user){
+                setUsuario(user);
+                setUsuariog(user);
+            }else{
+                setUsuario(null);
+                setUsuariog(null);
+            }
+
+        });
+
+    }, []);
 
   return (
     <div className="content-fluid mt-5">
@@ -21,7 +46,7 @@ const Inicio = () => {
 
                 <div className="container">
                     <Km/>
-                    <Logins/>
+                    { usuario === false ? (<Logins/>):('')}
                 </div>
 
             </div>

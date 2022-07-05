@@ -1,7 +1,9 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import NavBarPanel from './NavBarPanel'
 
-const Navbar = () => {
+const Navbar = (props) => {
+  console.log(props.usuario)
     return (
         <div className='container-fluid'>
 
@@ -25,6 +27,11 @@ const Navbar = () => {
                   </button>
                   <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
                     <ul class="navbar-nav text-right">
+                    {
+                        props.usuario !== false ? (
+                        <NavBarPanel usuariog={props.usuario}/>
+                        ):('')
+                      }
                       <li class="nav-item active">
                       <NavLink className="btn mr-2" to="/">Inicio</NavLink>
                       </li>
@@ -34,6 +41,7 @@ const Navbar = () => {
                       <li class="nav-item">
                       <NavLink className="btn mr-2" to="/preguntas">Preguntas</NavLink>
                       </li>
+                      
                     </ul>
                   </div>
                 </nav>

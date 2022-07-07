@@ -23,7 +23,7 @@ const Inicio = ({setUsuariog}) => {
                 setUsuario(user);
                 setUsuariog(user);
             }else{
-                setUsuario(null);
+                setUsuario(false);
                 setUsuariog(null);
             }
 
@@ -46,7 +46,7 @@ const Inicio = ({setUsuariog}) => {
 
                 <div className="container">
                     <Km/>
-                    { usuario === false ? (<Logins/>):('')}
+                    { usuario === false ? (<Logins/>):(<div className='d-flex justify-content-center mt-5'><button className='btn btn-success'><a class="text-white text-decoration-none display-4" href="crear">COMENZAR</a></button></div>)}
                 </div>
 
             </div>

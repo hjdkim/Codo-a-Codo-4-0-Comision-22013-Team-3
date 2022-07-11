@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="595.28px" height="841.89px" viewBox="0 0 595.28 841.89" enable-background="new 0 0 595.28 841.89" xml:space="preserve">
+<radialGradient id="SVGID_1_" cx="297.6401" cy="297.6401" r="297.6401" gradientUnits="userSpaceOnUse">
+	<stop  offset="0" style="stop-color:#FFFFFF"/>
+	<stop  offset="0.9113" style="stop-color:#FCD0A8"/>
+	<stop  offset="1" style="stop-color:#F08019"/>
+</radialGradient>
+<circle fill="url(#SVGID_1_)" cx="297.64" cy="297.64" r="297.64"/>
+<radialGradient id="SVGID_2_" cx="297.6401" cy="297.6401" r="269.2915" gradientUnits="userSpaceOnUse">
+	<stop  offset="0" style="stop-color:#6DC6D9"/>
+	<stop  offset="1" style="stop-color:#005D3E"/>
+</radialGradient>
+<circle fill="url(#SVGID_2_)" cx="297.64" cy="297.64" r="269.292"/>
+<radialGradient id="SVGID_3_" cx="297.6401" cy="297.6401" r="269.2915" gradientUnits="userSpaceOnUse">
+	<stop  offset="0" style="stop-color:#6DC6D9"/>
+	<stop  offset="1" style="stop-color:#005D3E"/>
+</radialGradient>
+<circle fill="url(#SVGID_3_)" cx="297.64" cy="297.64" r="269.292"/>
+<g>
+	<path d="M149.375,231.672V363.64h-36.932v-99.387c-9.861,4.771-19.014,7.444-27.457,8.024v-17.402
+		c19.399-1.934,33.064-9.668,40.992-23.203H149.375z"/>
+	<path d="M296.039,336.086H281.44v27.554h-37.512v-27.554h-49.113v-16.339l61.488-88.075h25.137v89.525h14.599V336.086z
+		 M211.927,321.198h32.581v-50.467L211.927,321.198z"/>
+	<path d="M414.084,265.8l-17.596,2.9c0.773-4.254,1.16-7.895,1.16-10.925c0-11.858-5.607-17.789-16.822-17.789
+		c-8.058,0-13.713,3.175-16.967,9.523c-3.256,6.349-5.656,18.804-7.203,37.367c8.057-7.024,16.436-10.538,25.137-10.538
+		c11.344,0,20.753,3.964,28.23,11.892c7.477,7.928,11.215,17.919,11.215,29.971c0,14.502-4.398,26.104-13.196,34.805
+		s-20.513,13.052-35.144,13.052c-37.642,0-56.461-22.043-56.461-66.129c0-21.463,5.397-38.575,16.194-51.337
+		c10.795-12.762,25.282-19.143,43.458-19.143c25.586,0,38.381,10.088,38.381,30.261C414.471,261.45,414.341,263.48,414.084,265.8z
+		 M370.578,289.874c-10.119,0-15.178,10.185-15.178,30.551c0,23.396,4.769,35.095,14.309,35.095
+		c9.281,0,13.922-12.375,13.922-37.125C383.631,299.381,379.279,289.874,370.578,289.874z"/>
+	<path d="M512.118,231.672V363.64h-36.932v-99.387c-9.861,4.771-19.015,7.444-27.457,8.024v-17.402
+		c19.399-1.934,33.064-9.668,40.992-23.203H512.118z"/>
+</g>
+</svg>

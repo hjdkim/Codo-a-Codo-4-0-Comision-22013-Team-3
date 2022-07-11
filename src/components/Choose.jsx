@@ -2,14 +2,30 @@ import React from 'react'
 import IniciarPedido from './IniciarPedido'
 import PoolRepartidor from './PoolRepartidor'
 import { useState } from 'react'
+import { gsap } from 'gsap';
+import { useLayoutEffect } from 'react';
+import { useRef } from 'react';
 
 const Choose = () => {
 
     const [crear, setCrear] = useState(false);
     const [realizar, setRealizar] = useState(false);
 
+    const el = useRef();
+    const q = gsap.utils.selector(el);
+
+    useLayoutEffect(() => {
+        gsap.fromTo(q(".row"), {
+        opacity: 0
+        }, {
+        opacity: 1,
+        duration: 2.2,
+        stagger: 0.2
+        });
+    }, []);
+
   return (
-    <div className='row d-flex align-items-center justify-content-center h-100 flex-column'>
+    <div className='row d-flex align-items-center justify-content-center h-100 flex-column' ref={el}>
 
         <div className="col12 d-flex justify-content-center align-items-center flex-column"><h2 className='mb-5'>Elige lo que deseas:</h2>
         <div className="row w-100">

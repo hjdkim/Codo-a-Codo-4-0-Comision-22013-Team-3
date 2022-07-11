@@ -8,6 +8,7 @@ import Admin from "./components/Admin";
 import Choose from "./components/Choose";
 import { useState } from "react";
 import Nosotros from './components/Nosotros';
+import Preguntas from './components/Preguntas';
 import { useLayoutEffect } from "react";
 import gsap from "gsap";
 import { useRef } from 'react';

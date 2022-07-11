@@ -57,4 +57,4 @@ const Preguntas = () => {
   )
 }
 
-export default Nosotros
+export default Preguntas

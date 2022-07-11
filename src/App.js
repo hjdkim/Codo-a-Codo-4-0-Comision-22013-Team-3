@@ -8,16 +8,34 @@ import Admin from "./components/Admin";
 import Choose from "./components/Choose";
 import { useState } from "react";
 import Nosotros from './components/Nosotros';
+import { useLayoutEffect } from "react";
+import gsap from "gsap";
+import { useRef } from 'react';
 
 function App() {
   const [usuariog, setUsuariog] = useState(false);
+
+  const el = useRef();
+  const q = gsap.utils.selector(el);
+
+  useLayoutEffect(() => {
+    gsap.fromTo(q(".row"), {
+      opacity: 0
+    }, {
+      opacity: 1,
+      duration: 1,
+      stagger: 0.2
+    });
+  }, []);
+
+
   return (
     <div className="container-fluid h-100">
       <BrowserRouter>
         <Navbar usuario={usuariog}></Navbar>
 
         <Routes>
-          <Route index element={<Inicio setUsuariog={setUsuariog}/>} />
+          <Route index element={<Inicio ref={el} setUsuariog={setUsuariog}/>} />
           <Route path="/login" element={<Logins />} />
           <Route path="/crear" element={<Choose/>}/>
           <Route path="/nosotros" element={<Nosotros />} />

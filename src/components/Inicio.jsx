@@ -7,7 +7,8 @@ import { useState } from 'react'
 import { firebase } from '../firebase'
 import { onAuthStateChanged } from 'firebase/auth'
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
-import NavBarPanel from './NavBarPanel'
+import NavBarPanel from './NavBarPanel';
+import { useLayoutEffect } from 'react';
 
 const Inicio = ({setUsuariog}) => {
 
@@ -31,8 +32,21 @@ const Inicio = ({setUsuariog}) => {
 
     }, []);
 
+    const el = useRef();
+    const q = gsap.utils.selector(el);
+
+    useLayoutEffect(() => {
+        gsap.fromTo(q(".row"), {
+        opacity: 0
+        }, {
+        opacity: 1,
+        duration: 2.2,
+        stagger: 0.2
+        });
+    }, []);
+
   return (
-    <div className="content-fluid mt-5">
+    <div className="content-fluid mt-5" ref={el}>
 
         <div className="row">
 

@@ -7,6 +7,7 @@ import PoolRepartidor from "./components/PoolRepartidor";
 import Admin from "./components/Admin";
 import Choose from "./components/Choose";
 import { useState } from "react";
+import Nosotros from './components/Nosotros';
 
 function App() {
   const [usuariog, setUsuariog] = useState(false);
@@ -19,6 +20,7 @@ function App() {
           <Route index element={<Inicio setUsuariog={setUsuariog}/>} />
           <Route path="/login" element={<Logins />} />
           <Route path="/crear" element={<Choose/>}/>
+          <Route path="/nosotros" element={<Nosotros />} />
           
         </Routes>
       </BrowserRouter>
